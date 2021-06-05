@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/item_margin">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- image episode !-->
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_episode" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- titre episode !-->
+
+    <!-- croix pour fermer la popup !-->
+
+    <!-- titre description episode !-->
+
+    <TextView
+        android:id="@+id/detail_nom_episode"
+        style="@style/TitleTextStyle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/details_titreEpisode"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toEndOf="@+id/cardView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <ImageView
+        android:id="@+id/close_bouton_detail"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="64dp"
+        android:src="@drawable/ic_close"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- description episode selectionné !-->
+
+    <TextView
+        android:id="@+id/details_descriptionEpisode"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/details_descriptionEpisode"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/detail_nom_episode" />
+
+    <TextView
+        android:id="@+id/details_descriptionEpisode_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/details_descriptionEpisode_sub"
+        app:layout_constraintStart_toStartOf="@+id/details_descriptionEpisode"
+        app:layout_constraintTop_toBottomOf="@+id/details_descriptionEpisode"
+        style="@style/DefaultTextStyle"/>
+
+    <!-- titre duree episode !-->
+    <TextView
+        android:id="@+id/details_dureeEpisode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/SubtitleTextStyle"
+        android:layout_marginTop="@dimen/item_margin"
+        android:text="@string/details_dureeEpisode"
+        app:layout_constraintStart_toStartOf="@+id/details_descriptionEpisode_sub"
+        app:layout_constraintTop_toBottomOf="@+id/details_descriptionEpisode_sub" />
+
+    <!-- duree episode selectionné !-->
+    <TextView
+        android:id="@+id/details_dureeEpisode_sub"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/details_dureeEpisode_sub"
+        app:layout_constraintStart_toStartOf="@+id/details_dureeEpisode"
+        app:layout_constraintTop_toBottomOf="@+id/details_dureeEpisode" />
+
+    <!-- titre numéro episode !-->
+    <TextView
+        android:id="@+id/details_numeroEpisode"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_margin"
+        android:text="@string/details_numeroEpisode"
+        app:layout_constraintStart_toStartOf="@+id/details_dureeEpisode_sub"
+        app:layout_constraintTop_toBottomOf="@+id/details_dureeEpisode_sub" />
+
+    <!-- numéro episode selectionné !-->
+    <TextView
+        android:id="@+id/details_numeroEpisode_sub"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/details_numeroEpisode_sub"
+        app:layout_constraintStart_toStartOf="@+id/details_numeroEpisode"
+        app:layout_constraintTop_toBottomOf="@+id/details_numeroEpisode" />
+
+    <!-- titre saison episode !-->
+    <TextView
+        android:id="@+id/details_saison"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_margin"
+        android:text="@string/details_saison"
+        app:layout_constraintStart_toStartOf="@+id/details_numeroEpisode"
+        app:layout_constraintTop_toBottomOf="@+id/details_numeroEpisode_sub" />
+
+    <!-- saison episode selectionné !-->
+    <TextView
+        android:id="@+id/details_saison_sub"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/details_saison_sub"
+        app:layout_constraintStart_toStartOf="@+id/details_saison"
+        app:layout_constraintTop_toBottomOf="@+id/details_saison" />
+
+    <!-- icone trash pour supprimer l'épisode sélectionné !-->
+
+    <!-- icone de modification pour modifier l'épisode sélectionné (appel le fragment de modification d'épisode !-->
+    <ImageView
+        android:id="@+id/ic_trash"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/ic_trash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_saison_sub"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/ic_modification"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/ic_modification"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toEndOf="@+id/ic_trash"
+        app:layout_constraintTop_toBottomOf="@+id/details_saison_sub"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

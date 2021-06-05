@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- icone accueil !-->
+    <item
+        android:id="@+id/navbar_accueil"
+        android:title="@string/navbar_accueil"
+        android:icon="@drawable/ic_accueil"/>
+
+    <!-- icone saison !-->
+    <item
+        android:id="@+id/navbar_saison"
+        android:title="@string/navbar_saison"
+        android:icon="@drawable/ic_menu"
+        android:entries="@array/modification_saison"
+        style="@style/DefaultTextStyle" />
+
+
+
+</menu>

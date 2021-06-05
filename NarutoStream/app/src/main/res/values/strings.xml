@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">NarutoStream</string>
+    <!-- navbar -->
+    <string name="navbar_accueil">Accueil</string>
+    <string name="navbar_saison">Saison</string>
+
+    <!-- page d'accueil -->
+    <string name="accueil_nomPage">Accueil</string>
+    <string name="accueil_numeroEpisode">numero episode</string>
+    <string name="accueil_titreEpisode">titre episode</string>
+    <string name="accueil_dureeEpisode">duree episode</string>
+
+    <!-- page saison -->
+    <string name="saison_nomPage">Saison</string>
+    <string name="saison_numeroEpisode">numero episode</string>
+    <string name="saison_titreEpisode">titre episode</string>
+    <string name="saison_dureeEpisode">duree episode</string>
+
+    <!-- page details épisode -->
+    <string name="details_nomPage">Détails</string>
+    <string name="details_saison">Saison episode</string>
+    <string name="details_saison_sub">saison episode sub</string>
+    <string name="details_numeroEpisode">Numero episode</string>
+    <string name="details_numeroEpisode_sub">numero episode sub</string>
+    <string name="details_titreEpisode">Titre episode</string>
+    <string name="details_dureeEpisode">Duree episode</string>
+    <string name="details_dureeEpisode_sub">duree episode sub</string>
+    <string name="details_descriptionEpisode">Description episode</string>
+    <string name="details_descriptionEpisode_sub">description episode sub</string>
+
+
+    <!-- page modification épisode -->
+    <string name="modification_nomPage">Modification épisode</string>
+    <string name="modification_dureePage">Modification durée</string>
+    <string name="modification_saison_input">@string/details_saison</string>
+
+    <string-array name="modification_saison">
+        <item>Saison 1</item>
+        <item>Saison 2</item>
+        <item>Saison 3</item>
+        <item>Saison 4</item>
+    </string-array>
+
+    <string name="modification_titreEpisode_input">@string/details_titreEpisode</string>
+    <string name="modification_descriptionEpisode_input">@string/details_descriptionEpisode</string>
+    <string name="modification_dureeEpisode_input">@string/details_dureeEpisode</string>
+    <string name="modification_confirm_button">Confirmer</string>
+</resources>
